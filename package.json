@@ -1,0 +1,25 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "react js",
+  "main": "app.js",
+  "scripts": {
+    "start": "react"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjibchanda-codeclouds/namaste-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "sanjib chanda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanjibchanda-codeclouds/namaste-react/issues"
+  },
+  "homepage": "https://github.com/sanjibchanda-codeclouds/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
