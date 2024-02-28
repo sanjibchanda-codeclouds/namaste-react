@@ -13,4 +13,13 @@
    => normal dependency - it is required for in a production phase
    => dev dependency - it is required for in a development phase
 
-8. asds
+8. dependencies: ~ major updated / ^ minor update on dependencies
+
+9. browserslist:
+   => https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z
+
+# issus solved:
+
+1. Error: Expected content key de1e4a02ec63c4eb to exist:
+   => remove '.parcel-cache' folder from your project
+   https://stackoverflow.com/questions/77166144/error-expected-content-key-de1e4a02ec63c4eb-to-exist-getting-this-error-in-reac
