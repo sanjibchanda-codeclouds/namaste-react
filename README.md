@@ -29,5 +29,6 @@
    => add in package.json file
 
    "browserslist": [
-   "last 2 version"
+   "last 2 chrome version",
+   "last 2 firefox version"
    ]

@@ -18,6 +18,23 @@
 9. browserslist:
    => https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z
 
+10. what is JSX
+    => jsx is html/xlm like syntax
+
+11. JSX transpile before it reaches the JS -> PARCEL -> Babel(transpile jsx to JS)
+
+12. what is Babel
+    => Babel is a Javascript Compiler
+    https://babeljs.io/
+
+13. react to web ReactElement compile process:
+    React.createElement => ReactElement -js Object => HTMLElement(render)
+    JSX => React.createElement => ReactElement -js Object => HTMLElement(render)
+
+14. React Components:
+    class base components - old
+    functional components - new
+
 # issus solved:
 
 1. Error: Expected content key de1e4a02ec63c4eb to exist:
