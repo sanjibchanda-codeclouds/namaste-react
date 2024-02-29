@@ -35,6 +35,9 @@
     class base components - old
     functional components - new
 
+15. what is component composition
+    => composing a component one another
+
 # issus solved:
 
 1. Error: Expected content key de1e4a02ec63c4eb to exist:
