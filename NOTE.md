@@ -40,6 +40,21 @@
 
 16. what is props
 
+17. what is HOOKS
+    => normal JS utility Functions
+
+18. what is UseState()
+    =>
+
+19. what is Dom and virtual Dom
+
+20. React algorithm
+    => React use reconciliation algorithm (React Fiber) -> React16
+    ref: https://github.com/acdlite/react-fiber-architecture
+
+21. What is reconciliation?
+22. What is a fiber?
+
 ---
 
 # issus solved:
@@ -63,3 +78,7 @@
 2. react itself says that dont use in MAP function 'index' use as a key.
    =>We don’t recommend using indexes for keys if the order of items may change. This can negatively impact performance and may cause issues with component state.
    ref: https://legacy.reactjs.org/docs/lists-and-keys.html
+
+3. two type of approach to load webpage:
+   1. load -> API -> render
+   2. load -> render -> API -> render (react)
