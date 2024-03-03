@@ -38,8 +38,28 @@
 15. what is component composition
     => composing a component one another
 
+16. what is props
+
+---
+
 # issus solved:
 
 1. Error: Expected content key de1e4a02ec63c4eb to exist:
    => remove '.parcel-cache' folder from your project
    https://stackoverflow.com/questions/77166144/error-expected-content-key-de1e4a02ec63c4eb-to-exist-getting-this-error-in-reac
+
+---
+
+# Extensions:
+
+1. json viewer for chrome browser
+
+---
+
+# important Note:
+
+1. config driven UI ? (use by Swiggy api)
+
+2. react itself says that dont use in MAP function 'index' use as a key.
+   =>We don’t recommend using indexes for keys if the order of items may change. This can negatively impact performance and may cause issues with component state.
+   ref: https://legacy.reactjs.org/docs/lists-and-keys.html
