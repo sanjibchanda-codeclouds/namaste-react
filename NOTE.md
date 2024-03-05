@@ -54,20 +54,13 @@
 
 21. What is reconciliation?
 22. What is a fiber?
+23. what is useEffect()
+    => useEffect is a function will take two arguments.
 
----
+    1. arrow function (callback function)
+    2. dependency array []
 
-# issus solved:
-
-1. Error: Expected content key de1e4a02ec63c4eb to exist:
-   => remove '.parcel-cache' folder from your project
-   https://stackoverflow.com/questions/77166144/error-expected-content-key-de1e4a02ec63c4eb-to-exist-getting-this-error-in-reac
-
----
-
-# Extensions:
-
-1. json viewer for chrome browser
+24. what is CORS policy
 
 ---
 
@@ -82,3 +75,18 @@
 3. two type of approach to load webpage:
    1. load -> API -> render
    2. load -> render -> API -> render (react)
+
+---
+
+# issus solved:
+
+1. Error: Expected content key de1e4a02ec63c4eb to exist:
+   => remove '.parcel-cache' folder from your project
+   https://stackoverflow.com/questions/77166144/error-expected-content-key-de1e4a02ec63c4eb-to-exist-getting-this-error-in-reac
+
+---
+
+# Extensions:
+
+1. json viewer for chrome browser
+2. cors chrome extension

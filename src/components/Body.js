@@ -1,10 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import ResturantCard from "./ResturantCard";
-import resList from "../utils/MocData";
+import Shimmer from "./Shimmer";
+// import products from "../utils/MocData";
 
 const Body = () => {
-  const [listOfResturant, setlistOfResturant] = useState(resList);
+  const [productList, setProductList] = useState([]);
+  const [products, setProducts] = useState([]);
+
+  const fakeApi = "https://dummyjson.com/products";
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const response = await fetch(fakeApi);
+
+    const data = await response.json();
+    setProductList(data?.products);
+    setProducts(data?.products);
+
+    console.log(data);
+  };
+
+  // condition rendering
+  if (productList.length === 0) {
+    return <Shimmer />;
+  }
 
   return (
     <div className="body">
@@ -12,38 +35,33 @@ const Body = () => {
         <button
           className="filter-btn"
           onClick={() => {
-            const filteredList = resList.filter(
-              (res) => res.data.avgRating > 4
-            );
-            setlistOfResturant(filteredList);
+            const filteredList = products.filter((prod) => prod.price < 1000);
+            setProductList(filteredList);
           }}
         >
-          top rated Resturant
+          below 1000
         </button>
         <button
           className="filter-btn"
           onClick={() => {
-            const filteredPrice = resList.filter(
-              (res) => res.data.deliveryTime < 30
-            );
-            setlistOfResturant(filteredPrice);
+            const filteredPrice = products.filter((prod) => prod.stock < 50);
+            setProductList(filteredPrice);
           }}
         >
-          below 30 min
+          stock
         </button>
         <button
           className="filter-btn"
           onClick={() => {
-            setlistOfResturant(resList);
-            console.log(resList);
+            setProductList(products);
           }}
         >
           Reset
         </button>
       </div>
       <div className="resturant-container">
-        {listOfResturant.map((Resturant) => (
-          <ResturantCard key={Resturant.data.id} resData={Resturant} />
+        {productList.map((product) => (
+          <ResturantCard key={product.id} prodData={product} />
         ))}
       </div>
     </div>

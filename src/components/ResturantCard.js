@@ -1,17 +1,30 @@
 const ResturantCard = (props) => {
-  const { resData } = props;
-  const { img, name, cuisines, avgRating, costForTwo, deliveryTime } =
-    resData?.data;
+  const { prodData } = props;
+  const {
+    id,
+    title,
+    description,
+    price,
+    discountPercentage,
+    rating,
+    stock,
+    brand,
+    category,
+    images,
+  } = prodData;
 
   return (
     <div className="resturant-card">
-      <img src={img} alt="images" className="card-img" />
-      <h3>{name}</h3>
+      <img src={images[0]} alt="images" className="card-img" />
+      <h3>{title}</h3>
       <div>
-        <p>{cuisines.join(", ")}</p>
-        <p>{avgRating} stars</p>
-        <p>Rs.{costForTwo / 100} for two</p>
-        <p>{deliveryTime} minutes</p>
+        <p>{description}</p>
+        <p>{price} stars</p>
+        <p>{discountPercentage}</p>
+        <p>{rating}</p>
+        <p>{stock}</p>
+        <p>{brand}</p>
+        <p>{category}</p>
       </div>
     </div>
   );
